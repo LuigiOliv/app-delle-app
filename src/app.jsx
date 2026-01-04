@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import LandingPage from './pages/LandingPage';
+import Layout from './components/layout';
+import LandingPage from './pages/landingPage';
 
 // Importazione Lazy delle tue 3 Demo (così non pesano sulla home iniziale)
 // Sostituisci './pages/demos/...' con il percorso reale delle tue demo

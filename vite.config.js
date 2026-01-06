@@ -3,10 +3,10 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',  // ⚠️ Specifica per app-delle-app (root)
+  base: '/',
   esbuild: {
     loader: 'jsx',
-    include: /src\/.*\.jsx?$/,
+    include: /.*\.jsx?$/,  // Include tutti i file .js/.jsx
     exclude: [],
   },
   optimizeDeps: {

@@ -4,10 +4,9 @@ import Layout from '../components/layout.jsx';
 import LandingPage from '../pages/landingpage.jsx';
 
 // Importazione Lazy delle tue 3 Demo (così non pesano sulla home iniziale)
-// Sostituisci './pages/demos/...' con il percorso reale delle tue demo
-// const DemoOne = lazy(() => import('./pages/demos/Demo1'));
-// const DemoTwo = lazy(() => import('./pages/demos/Demo2'));
-// const DemoThree = lazy(() => import('./pages/demos/Demo3'));
+const DemoOne = lazy(() => import('../pages/demos/Demo1'));
+const DemoTwo = lazy(() => import('../pages/demos/Demo2'));
+const DemoThree = lazy(() => import('../pages/demos/Demo3'));
 
 // Un componente di caricamento semplice mentre scarica il bundle della demo
 const Loading = () => (
@@ -30,9 +29,9 @@ function App() {
                         <Route index element={<LandingPage />} />
 
                         {/* Le tue 3 Demo */}
-                        {/* <Route path="app-1" element={<DemoOne />} />
+                        <Route path="app-1" element={<DemoOne />} />
                         <Route path="app-2" element={<DemoTwo />} />
-                        <Route path="app-3" element={<DemoThree />} />*/}
+                        <Route path="app-3" element={<DemoThree />} />
 
                         {/* Pagina 404/Fallback */}
                         <Route path="*" element={<div className="p-10">Pagina non trovata</div>} />

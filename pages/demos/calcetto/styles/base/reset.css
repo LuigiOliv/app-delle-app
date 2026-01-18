@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Aggiungi dopo la riga 18: */
+.calcetto-demo-wrapper {
+    background-color: var(--bg-deep);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    min-height: 100vh;
+}
+
+/* Tablet+ */
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,101 @@
+.calcetto-demo-wrapper {
+
+    overflow: hidden !important;
+    position: relative !important;
+    height: calc(100vh - 150px) !important;
+    /* Sottrai spazio per header/footer */
+}
+
+.calcetto-demo-wrapper .app-container {
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.content {
+    /* Mobile: padding minimo per massimizzare spazio */
+    padding: 0 1rem;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+/* Tablet: inizia a centrare con max-width */
+@media (min-width: 768px) {
+    .content {
+        padding: 0 1.5rem;
+        max-width: 900px;
+    }
+}
+
+/* Desktop: layout centrato con larghezza controllata */
+@media (min-width: 1024px) {
+    .app-container {
+        max-width: 100%;
+        min-width: 800px;
+        /* Solo su desktop ha senso avere min-width */
+    }
+
+    .content {
+        padding: 0 2rem;
+        max-width: 1400px;
+    }
+}
+
+.section-container {
+    /* Mobile: full width disponibile */
+    width: 100%;
+    margin: 0 auto 60px auto;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    /* Mobile: gap ridotto */
+    gap: 10px;
+    flex-wrap: wrap;
+    /* Permette wrap se necessario */
+}
+
+.section-header h2 {
+    margin: 0;
+    flex: 1;
+    font-size: 1.5rem;
+    /* Mobile: piÃ¹ piccolo */
+    min-width: 200px;
+    /* Previene compressione eccessiva */
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .section-container {
+        width: 95%;
+        max-width: 900px;
+    }
+
+    .section-header {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .section-container {
+        width: 90%;
+    }
+
+    .section-header {
+        gap: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}

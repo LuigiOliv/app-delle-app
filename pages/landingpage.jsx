@@ -36,8 +36,8 @@ const LandingPage = () => {
                             <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 group-hover:scale-110 transition-transform">
                                 1
                             </div>
-                            <h3 className="font-bold text-lg mb-2 group-hover:text-blue-600">Nome Demo 1</h3>
-                            <p className="text-gray-500 text-sm">Descrizione breve di cosa fa questa app (es. Generazione testi AI).</p>
+                            <h3 className="font-bold text-lg mb-2 group-hover:text-blue-600">Calcetto Rating</h3>
+                            <p className="text-gray-500 text-sm">Gestione partite, voti, classifiche e profili giocatori.</p>
                         </div>
                     </Link>
 
@@ -47,8 +47,8 @@ const LandingPage = () => {
                             <div className="h-10 w-10 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-purple-600 group-hover:scale-110 transition-transform">
                                 2
                             </div>
-                            <h3 className="font-bold text-lg mb-2 group-hover:text-purple-600">Nome Demo 2</h3>
-                            <p className="text-gray-500 text-sm">Descrizione breve (es. Dashboard analitica interattiva).</p>
+                            <h3 className="font-bold text-lg mb-2 group-hover:text-purple-600">Rugby App</h3>
+                            <p className="text-gray-500 text-sm">Prototipo gestione squadra/club con UI mobile-first.</p>
                         </div>
                     </Link>
 
@@ -58,8 +58,8 @@ const LandingPage = () => {
                             <div className="h-10 w-10 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600 group-hover:scale-110 transition-transform">
                                 3
                             </div>
-                            <h3 className="font-bold text-lg mb-2 group-hover:text-green-600">Nome Demo 3</h3>
-                            <p className="text-gray-500 text-sm">Descrizione breve (es. Tool di calcolo o gestione).</p>
+                            <h3 className="font-bold text-lg mb-2 group-hover:text-green-600">Agrumi App</h3>
+                            <p className="text-gray-500 text-sm">Mini e-commerce: catalogo prodotti, carrello e admin.</p>
                         </div>
                     </Link>
 

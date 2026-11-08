@@ -1,0 +1,27 @@
+.embedded-demo-frame {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+
+    /* Contain embedded apps so any `position: fixed` behaves like it's inside the frame */
+    position: relative;
+    isolation: isolate;
+    transform: translateZ(0);
+
+    /* Avoid embedded UI spilling out horizontally (e.g. 100vw bars) */
+    overflow-x: hidden;
+}
+
+/* Normalize embedded apps width so demos feel consistent */
+.embedded-demo-frame .agrumi-root,
+.embedded-demo-frame .rugby-root {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Keep embedded apps contained and scrollable inside the main area */
+.embedded-demo-frame {
+    overflow-y: auto;
+}

@@ -32,17 +32,17 @@ const Layout = () => {
 
                     <Link to="/app-1" className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${isActive('/app-1')}`}>
                         <Zap size={20} />
-                        <span>Demo 1: AI Chat</span>
+                        <span>Demo 1: Calcetto Rating</span>
                     </Link>
 
                     <Link to="/app-2" className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${isActive('/app-2')}`}>
                         <Box size={20} />
-                        <span>Demo 2: Dashboard</span>
+                        <span>Demo 2: Rugby App</span>
                     </Link>
 
                     <Link to="/app-3" className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${isActive('/app-3')}`}>
                         <Layers size={20} />
-                        <span>Demo 3: Utility</span>
+                        <span>Demo 3: Agrumi App</span>
                     </Link>
                 </nav>
 

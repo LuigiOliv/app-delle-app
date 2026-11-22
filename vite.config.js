@@ -4,6 +4,10 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// In CI the sibling apps are checked out inside the workspace (SIBLING_APPS_DIR).
+const siblingApps = process.env.SIBLING_APPS_DIR
+  ? path.resolve(process.env.SIBLING_APPS_DIR)
+  : path.resolve(__dirname, '..');
 
 export default defineConfig({
   plugins: [react()],
@@ -11,8 +15,8 @@ export default defineConfig({
   resolve: {
     alias: {
       // Embed the real apps (live source) as demos.
-      '@agrumi': path.resolve(__dirname, '../agrumi-app/src'),
-      '@rugby': path.resolve(__dirname, '../rugby-app/src'),
+      '@agrumi': path.join(siblingApps, 'agrumi-app/src'),
+      '@rugby': path.join(siblingApps, 'rugby-app/src'),
     },
   },
   esbuild: {

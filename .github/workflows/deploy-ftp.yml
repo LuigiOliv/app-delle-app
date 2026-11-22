@@ -11,6 +11,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Checkout agrumi-app (demo source)
+        uses: actions/checkout@v4
+        with:
+          repository: LuigiOliv/agrumi-app
+          path: .siblings/agrumi-app
+
+      - name: Checkout rugby-app (demo source)
+        uses: actions/checkout@v4
+        with:
+          repository: LuigiOliv/rugby-app
+          path: .siblings/rugby-app
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -22,6 +34,8 @@ jobs:
 
       - name: Build with Vite
         run: npm run build
+        env:
+          SIBLING_APPS_DIR: ${{ github.workspace }}/.siblings
 
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
